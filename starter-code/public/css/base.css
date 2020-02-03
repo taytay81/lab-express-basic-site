@@ -1,0 +1,28 @@
+* {
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+  box-sizing: border-box;
+}
+
+.nav-list {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.nav-right-links {
+  display: flex;
+  flex-direction: row;
+  list-style-type: none;
+  align-content: flex-end;
+}
+.nav-right-links li {
+  margin: 10px;
+  text-align: center;
+}
+.header-center {
+  align-items: center;
+  justify-content: center;
+}
+.header-center h1 {
+  font-size: 32px;
+  margin-top: 30px;
+}

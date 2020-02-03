@@ -1,0 +1,18 @@
+.personal-picture {
+  display: grid;
+
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-gap: 10px 10px;
+}
+
+.perso-img {
+  width: 100%;
+  height: 100%;
+}
+.insta-link {
+  text-decoration: none;
+}
+.list-insta {
+  list-style: none;
+}
