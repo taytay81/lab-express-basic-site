@@ -1,28 +1,129 @@
 * {
-  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+  font: 1vw "Bellota", cursive;
   box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  color: black;
 }
-
+.dark-color {
+  background-color: #eeeeee;
+}
+.nav-logo {
+  height: 8vh;
+  margin-left: 10vw;
+}
+.nav-logo-image {
+  max-height: 100%;
+  border: 5px solid black;
+  padding: 2px;
+  background-color: white;
+}
 .nav-list {
   display: flex;
-  flex-direction: row;
   justify-content: space-between;
+  border: 5px solid #ffffff;
+  height: 10vh;
+  width: 100vw;
 }
-.nav-right-links {
-  display: flex;
-  flex-direction: row;
-  list-style-type: none;
-  align-content: flex-end;
-}
-.nav-right-links li {
-  margin: 10px;
-  text-align: center;
-}
+
 .header-center {
+  display: flex;
   align-items: center;
   justify-content: center;
 }
 .header-center h1 {
-  font-size: 32px;
-  margin-top: 30px;
+  font-size: 3vw;
+  font-weight: bold;
+  text-align: center;
+  color: black;
+  margin-left: 10vw;
+}
+.header-right {
+  display: flex;
+}
+.header-right li {
+  padding-right: 10px;
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.header-right-link {
+  color: black;
+  font-size: 1.5vw;
+  font-weight: bold;
+  text-decoration: none;
+  margin-right: 2vw;
+}
+
+.header-right-link:hover {
+  border-bottom: 2px solid #000;
+  -o-transition: 0.4s;
+  -ms-transition: 0.4s;
+  -moz-transition: 0.4s;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+.footer-section {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  height: 5vh;
+  width: 100vw;
+  border: 5px solid #ffffff;
+}
+.footer-section-elt {
+  list-style: none;
+}
+.footer-link {
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 20px;
+}
+.footer-link:hover {
+  border-bottom: 2px solid #000;
+  -o-transition: 0.4s;
+  -ms-transition: 0.4s;
+  -moz-transition: 0.4s;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+  .nav-list {
+    background-color: red;
+  }
+  .header-right {
+    visibility: hidden;
+  }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) and (max-width: 768px) {
+  .nav-list {
+    background-color: green;
+  }
+  .header-right {
+    visibility: hidden;
+  }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) and (max-width: 992px) {
+  .nav-list {
+    background-color: purple;
+  }
+  .header-right {
+    visibility: hidden;
+  }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+  .nav-list {
+    background-color: yellow;
+  }
+  .header-right {
+    visibility: visible;
+  }
 }

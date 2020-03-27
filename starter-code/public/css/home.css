@@ -1,8 +1,150 @@
+.home-container {
+  display: flex;
+  justify-content: center;
+}
+
 .home-div {
-  background-image: url(../images/logo/logo.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;
-  height: 100vw;
-  width: 100vw;
-  display: grid;
+  width: 80vw;
+  height: 80vh;
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  margin-top: 3vh;
+  margin-bottom: 2vh;
+}
+.home-section-link {
+  text-decoration: none;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.home-section-discover-btn {
+  border: 2px solid black;
+  width: fit-content;
+  font-weight: bold;
+  color: white;
+  background-color: black;
+}
+.home-section-discover-btn:hover {
+  background-color: #eeeeee;
+  color: black;
+  border: 2px solid #eeeeee;
+}
+.homepage-section {
+  width: 30%;
+  max-height: 90%;
+  border: 4px solid black;
+  display: flex;
+  justify-content: center;
+  margin-right: 3%;
+  margin-left: 3%;
+  margin-top: 2%;
+}
+
+.home-line {
+  display: flex;
+  justify-content: center;
+}
+.home-section-image-container {
+  width: 45%;
+  max-height: 100%;
+  padding-bottom: 2%;
+  margin: 1%;
+}
+.home-section-landscape-img-container {
+  width: 80%;
+  max-height: 100%;
+  padding-bottom: 2%;
+  margin: 1%;
+}
+
+.home-section-image {
+  max-width: 100%;
+  max-height: 100%;
+  border: 3px solid black;
+}
+
+.home-section-subline {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 1%;
+  width: 50%;
+}
+.home-section-subline h4 {
+  font-weight: bold;
+  font-size: 16px;
+  margin-right: 5%;
+}
+
+/*media query on small screen*/
+
+@media only screen and (max-width: 600px) {
+  /*red*/
+  .home-section-subline {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 1%;
+    width: 80%;
+  }
+  .homepage-section {
+    width: 60%;
+    max-height: 90%;
+    border: 4px solid black;
+    display: flex;
+    justify-content: center;
+    margin-right: 3%;
+    margin-left: 3%;
+    margin-top: 4%;
+  }
+  * {
+    font: 2vw "Bellota", cursive;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    color: black;
+  }
+}
+
+@media only screen and (min-width: 600px) and (max-width: 768px) {
+  /*green*/
+  * {
+    font: 2vw "Bellota", cursive;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    color: black;
+  }
+  .homepage-section {
+    width: 50%;
+    max-height: 90%;
+    border: 4px solid black;
+    display: flex;
+    justify-content: center;
+    margin-right: 3%;
+    margin-left: 3%;
+    margin-top: 4%;
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 992px) {
+  /*purple*/
+  .homepage-section {
+    width: 40%;
+    max-height: 90%;
+    border: 4px solid black;
+    display: flex;
+    justify-content: center;
+    margin-right: 3%;
+    margin-left: 3%;
+    margin-top: 2%;
+  }
+  * {
+    font: 1.5vw "Bellota", cursive;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    color: black;
+  }
 }

@@ -7,6 +7,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Welcome to Art Corner </title>
     <script src="https://kit.fontawesome.com/567b09ec69.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Bellota&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="/css/base.css">
     {{#each css}}
     <link rel="stylesheet" href="/css/{{this}}.css">
@@ -14,9 +15,15 @@
 </head>
 
 <body>
-    {{> partNavigation }}
-    {{{body}}}
-    {{>partFooter}}
+    <div class="dark-color">
+        {{> partNavigation }}
+        {{{body}}}
+
+        {{>partFooter}}
+    </div>
+
+
+
 </body>
 
 </html>
